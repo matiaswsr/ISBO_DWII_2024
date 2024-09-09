@@ -1,0 +1,73 @@
+/* 
+	PRACTICAR SINTAXIS CON EJERCICIOS JS
+
+1. 	Crear una funcion que reciba un arreglo de enteros y retorne el minimo del arreglo.
+
+2. 	Idem anterior retornando el maximo del arreglo.
+
+3. 	Idem anterior pero devolviendo un nuevo arreglo que contenga los elementos que sean
+ 	multiplos de 3 y 5.
+
+4.	Crear una funcion que reciba un arreglo de naturales y retorne la cantidad de numeros primos.
+
+5.	Crear una funcion que reciba dos enteros (minimo, maximo) y retorne un numero entero aleatorio entre "minimo" y
+	"maximo" incluyendo los extremos.
+
+6.	Escribir una funcion que solicite ingresar "n" notas de alumnos y nos informe cuantos alumnos tienen
+	notas mayores a 7 y cuantos no, el programa finaliza al ingresar el digito 0.
+
+7.	Crear una funcion que reciba tres enteros, correspondientes a los coeficientes de una ecuacion de segundo grado, e informe
+	las raices de dicha ecuacion si son reales.
+
+8. 	Crear una funcion que reciba una cadena de texto (string) y que informe la cantidad de letras en minuscula que contenga.
+
+9. 	Crear una funcion que reciba un arreglo que contiene direcciones de email (string), y retorne un nuevo arreglo 
+	con las direcciones de email que sean de dominio gmail.
+
+10. Crear una funcion que reciba un arreglo de enteros, y retorne True si tiene elementos repetidos.
+
+11. Crear una funcion que reciba un arreglo de enteros, y retorne la cantidad de numeros repetidos.
+	[1,2,3,4,3,1,3,3] retorna 2
+
+12.	Diseñar una clase para guardar funcionarios, de cada funcionario se sabe su nombre, sueldo y sector donde trabaja,
+	(entero de 1 a 3). Cargar datos en el propio programa.
+	Escribir una funcion que reciba un arreglo y un numero de sector, y muestre en consola el nombre y sueldo de cada
+	funcionario que pertenezca a dicho sector. Al terminar mostrar la suma total de los sueldos del sector.
+
+13. Diseñar una clase para guardar paises y ciudades. Un país puede contener muchas ciudades.
+	Escribir un programa con el siguiente menu:
+	- Ingresar Pais: pedir el nombre de un pais y agregarlo si no existe
+	- Ingresar ciudad: pedir el nombre de un pais y ciudad, si el pais no existe, informar y no hacer nada,
+		si el pais existe y no existe la ciudad, guardar la ciudad en ese pais. 
+		Si existe la ciudad en ese pais, informar y no hacer nada.
+	- Consultar paises: mostrar en consola todos los paises registrados y sus ciudades
+	- Salir
+	
+14. Se asume precargado el arreglo que contiene numeros naturales con igual cantidad de digitos, por ejemplo: 
+	let arreglo = [1234, 3425, 8904, 4444, 6321]	
+	1. 	Crear una funcion "cifras" que recibe un numero entero positivo de varios digitos y retorna un arreglo de largo 
+		igual a la cantidad de cifras del numero recibido, donde en cada posicion del arreglo resultado almacena el digito correspondiente.
+		Por ejemplo, se recibe 124, se retorna [1, 2, 4]
+	2. 	Crear una funcion "min_max" que recibe un arreglo de numeros y retorna un nuevo arreglo conteniendo el minimo y maximo digito del arreglo.
+		min_max retorna: [minimo, maximo]
+	3. 	Crear una funcion "resultado" que procese el arreglo original (precargado) y genere dos nuevos arreglos:
+		"arreglo_max" y "arreglo_min", que contengan en cada posicion el digito más alto y mas bajo respectivamente, 
+		del numero almacenado en la posicion correspondiente al arreglo precargado.
+		O sea:
+			arreglo_min: contendra los digitos menores de cada uno de los numeros del arreglo original.
+			arreglo_max: contendra los digitos mayores de cada uno de los numeros del arreglo original.
+		Alcanza con imprimir los resultados en consola con una leyenda acorde, por ejemplo:
+		console.log("Arreglo de minimos: " [1, 2, 0, 4, 1]);
+		console.log("Arreglo de maximos: " [4, 4, 9, 4, 6]);
+
+15. Escribir una funcion que reciba un arreglo de string, cada string será un numero en binario, la funcion debe
+	retornar un nuevo arreglo de forma tal que en cada posicion esté el numero convertido a decimal.
+	Por ejemplo: recibe ["100111", "011011"] retorna [39, 27]
+
+16.	Crear una funcion que reciba un arreglo con direcciones IP en formato string y retorne un nuevo arreglo (booleano) 
+	indicando en cada posicion si la IP correspondiente a dicha posicion en el arreglo recibido es valida o no (true o false)
+	Para este ejercicio una direccion IP será válida si el primer octeto en decimal esta en el rango entre 1 y 255, y para
+	los demas octetos si estan en el rango entre 0 y 255.
+	Ejemplo: se recibe ["1.0.2.255", "10.256.10.80", "192.168.97.256", "0.150.25.3"] retorna [true, false, false, false]
+	
+*/
