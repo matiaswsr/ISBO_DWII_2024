@@ -54,11 +54,11 @@ function edicion(e){
 function editar(id){
     const data = autos.filter(auto => auto.id == id)[0];
     //Completo el formulario, mostrando los campos
-    for(let clave in data){
-        if(data.hasOwnProperty(clave)){
-            formActualizar.elements[clave].value = data[clave];
-        }
-    }
+    document.querySelector("#marca").value = data.marca;
+    document.querySelector("#modelo").value = data.modelo;
+    document.querySelector("#anio").value = data.anio;
+    document.querySelector("#precio").value = data.precio;
+    document.querySelector("#id").value = data.id;
     $("#myModal").modal("show");
 }
 
