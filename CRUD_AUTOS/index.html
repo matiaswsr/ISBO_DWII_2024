@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="shortcut icon" href="#" rel="noopener noreferrer">
+	<!-- Bootstrap 5.3 -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!-- Estilos Propios -->
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<title>CRUD</title>
+</head>
+<body class="bg-dark">
+
+	<h1 class="text-center mt-3 fw-bold"><span class="text-info">CRUD Autos</span><span class="text-white"> - Bootstrap 5.3</span></h1>
+
+
+	<main class="container-fluid mt-5">
+
+		<section class="row">
+			<form id="formulario" class="mb-3 p-3 w-75 mx-auto">
+				<div class="row mb-3">
+					<div class="col">
+						<input type="text" class="form-control" placeholder="MARCA" name="marca">
+					</div>
+					<div class="col">
+						<input type="text" class="form-control" placeholder="MODELO" name="modelo">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col">
+						<input type="number" min="2018" max="2023" class="form-control" placeholder="AÑO" name="anio">
+					</div>
+					<div class="col">
+						<input type="number" min="0" class="form-control" placeholder="PRECIO (U$S)" name="precio">
+					</div>
+				</div>
+
+				<div>
+					<input type="submit" class="btn btn-primary mt-3" value="Guardar datos">
+				</div>
+			</form>
+		</section>
+
+		<section class="row col-10 mx-auto">
+				<h4 class="text-center mb-3 fw-bold text-info">Datos de los autos</h4>
+				<table class="table table-striped text-center">
+					<thead class="table-primary">
+						<tr>
+							<th>Marca</th>
+							<th>Modelo</th>
+							<th>Año</th>
+							<th>Precio (U$S)</th>
+							<th>Acciones</th>
+						</tr>
+					</thead>
+					<tbody id="tabla"></tbody>
+				</table>
+		</section>
+	</main>
+
+	<!-- MODAL -->
+	<div class="modal fade" id="myModal" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header bg-primary">
+					<h5 class="modal-title text-white fw-bold text-uppercase">ACTUALIZAR DATOS</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+				</div>
+				<div class="modal-body">
+					<form id="formActualizar" class="mb-3 p-3 mx-auto">
+						<div class="row mb-3">
+							<div class="col">
+								<label>Marca:</label>
+								<input type="text" class="form-control" name="marca">
+							</div>
+							<div class="col">
+								<label>Modelo:</label>
+								<input type="text" class="form-control" name="modelo">
+							</div>
+						</div>
+		
+						<div class="row">
+							<div class="col">
+								<label>Año:</label>
+								<input type="number" min="2018" max="2023" class="form-control" name="anio">
+							</div>
+							<div class="col">
+								<label>Precio (u$s):</label>
+								<input type="number" min="0" class="form-control" name="precio">
+							</div>
+							<input type="text" name="id" hidden>
+						</div>
+
+						<div class="row mt-5">
+							<button type="submit" class="btn btn-primary btn-sm w-50 mx-auto">Guardar cambios</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	  
+
+
+	
+	<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- JS Propio -->
+	<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
